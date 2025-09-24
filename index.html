@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeBuddy Chat</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="app">
+    <nav class="sidebar">
+      <h2>CodeBuddy</h2>
+      <button id="newChat">+ New Chat</button>
+      <button id="exportHistory">Export</button>
+      <button id="importHistory">Import</button>
+      <button id="toggleTheme">Toggle Theme</button>
+    </nav>
+    <main class="chat-container" id="chatContainer"></main>
+    <div class="input-bar">
+      <textarea id="chatInput" placeholder="Type your message..."></textarea>
+      <button id="sendBtn">Send</button>
+      <label><input type="checkbox" id="codeMode" /> Code Mode</label>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
